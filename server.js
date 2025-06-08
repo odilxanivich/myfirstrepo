@@ -30,6 +30,7 @@ app.post('/submit', upload.single('file'), (req, res) => {
 // GET all posts
 app.get('/posts', (req, res) => {
   res.json(posts);
+  res.send('Backend server is running 🚀');
 });
 
 app.listen(PORT, () => {
