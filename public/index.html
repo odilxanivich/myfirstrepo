@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=no">
+    <title>Odilxanivich - the blog of a son, brother, teacher and a coder!</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!--bg img-->
+  <div class="bg-blur"></div>
+     <!-- Circular Navigation
+    <nav class="circle-nav">
+      <a href="#home" class="nav-btn" aria-label="Home"><i class="fas fa-home"></i></a>
+      <a href="#about" class="nav-btn" aria-label="About"><i class="fas fa-user"></i></a>
+      <a href="#contact" class="nav-btn" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+      <a href="#settings" class="nav-btn" aria-label="Services"><i class="fas fa-cogs"></i></a>
+    </nav> -->
+
+    <!-- Sections -->
+<section id="home" class="section">
+<div class="chatbox" id="chatBox">
+
+<!-- YouTube-like Post UI with Functional IDs -->
+<div class="post-box">
+<div class="post-header">
+<div class="user-info">
+<img src="2.jpg" alt="Profile">
+<span>Salmonxon Odilxonivich</span>
+</div>
+<div class="visibility">Visibility: <strong>Public</strong></div>
+</div>
+
+  <!-- Click to open editor -->
+<button id="newBtn">New Post</button>
+
+  <!-- Editor Box -->
+<div id="editor" style="display: none;">
+<textarea
+id="contentInput"
+rows="3"
+class="post-input"
+placeholder="Got something in mind? Let it out!">
+</textarea>
+
+<!-- File Upload Section -->
+<div id="filePreview" style="margin-bottom: 10px; display: none;"></div>
+
+<div class="toolbar" style="margin-top: 10px;">
+  <label for="fileInput" style="cursor: pointer;">
+    <i class="fas fa-paperclip"></i> Upload File
+  </label>
+  <input type="file" id="fileInput" style="display: none;" />
+</div>
+
+<div class="post-actions" style="margin-top: 10px; display: flex; justify-content: flex-end; gap: 10px;">
+<button class="cancel-btn" onclick="cancelPost()">Cancel</button>
+<button id="sendBtn" class="post-btn">Post</button>
+</div>
+</div>
+</div>
+
+<!-- Posted content display -->
+<div id="posts" style="margin-top: 20px; display: flex; flex-direction: column; gap: 12px;"></div>
+
+</section>
+<script src="main.js"></script>
+</body>
+</html>
